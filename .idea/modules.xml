@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Binary Tree/PreOrderTraversal.iml" filepath="$PROJECT_DIR$/Binary Tree/PreOrderTraversal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binary Tree/BinaryTree.iml" filepath="$PROJECT_DIR$/Binary Tree/BinaryTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/binary-tree.iml" filepath="$PROJECT_DIR$/.idea/binary-tree.iml" />
     </modules>
   </component>
