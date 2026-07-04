@@ -1,5 +1,3 @@
-import static java.lang.Math.max;
-
 public class MaxDepthBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -20,6 +18,6 @@ public class MaxDepthBT {
         int lh = maxDepth(root.left);
         int rh = maxDepth(root.right);
 
-        return 1 + max(lh, rh);
+        return 1 + Math.max(lh, rh);
     }
 }
