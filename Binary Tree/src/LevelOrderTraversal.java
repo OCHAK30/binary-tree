@@ -8,13 +8,13 @@ import java.util.Queue;
 
 public class LevelOrderTraversal {
     public static void main(String[] args) {
-        TreeNode node = new TreeNode(1);
-        node.left = new TreeNode(2);
-        node.left.left = new TreeNode(4);
-        node.left.right = new TreeNode(5);
+        TreeNode node = new TreeNode(3);
+        node.left = new TreeNode(9);
+        //node.left.left = new TreeNode(4);
+        //node.left.right = new TreeNode(5);
 
-        node.right = new TreeNode(3);
-        node.right.left = new TreeNode(6);
+        node.right = new TreeNode(20);
+        node.right.left = new TreeNode(15);
         node.right.right = new TreeNode(7);
 
         List<List<Integer>> ans = levelOrder(node);
@@ -26,7 +26,7 @@ public class LevelOrderTraversal {
         //agar root null hai, we return an empty list of lists
         if(root == null) return ans;
 
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<>();
         //add root to the queue
         queue.add(root);
 
@@ -34,7 +34,7 @@ public class LevelOrderTraversal {
             int size = queue.size();
             List<Integer> subList = new ArrayList<>();
             for (int i = 0; i < size; i++) {
-                if(queue.peek().left != null) queue.add(queue.peek().left);
+                if(queue.peek().left != null) queue.add(queue.peek().left);// add in queue
                 if(queue.peek().right != null) queue.add(queue.peek().right);
                 subList.add(queue.poll().val);
             }
