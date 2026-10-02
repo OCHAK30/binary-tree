@@ -1,3 +1,5 @@
+//TC: O(N), SC: O(N) in case of a skew tree.
+
 public class MaxDepthBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
