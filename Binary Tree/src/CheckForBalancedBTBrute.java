@@ -1,6 +1,12 @@
 // YT: https://www.youtube.com/watch?v=Yt50Jfbd8Po
 // TC: O(n) for traversal * O(n) for maxDepth -> O(n^2)
 // SC: O(n) -> auxiliary space or stack space for a skew tree at the worst case.
+
+/**
+ * A balanced binary tree, also referred to as a height-balanced binary tree,
+ * is defined as a binary tree in which the height of the left and right subtree
+ * of any node differ by not more than 1.
+ */
 public class CheckForBalancedBTBrute {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
